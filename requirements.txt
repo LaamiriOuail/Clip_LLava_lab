@@ -1,0 +1,15 @@
+# CLIP + LLaVA lab — validated with CUDA 12.8 (torch cu128)
+# torch must come from the cu128 index (Blackwell needs it):
+#   uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+torch>=2.11
+torchvision
+transformers>=4.50   # native CLIPModel + LlavaForConditionalGeneration / LlavaNext
+accelerate
+open_clip_torch      # OpenCLIP checkpoints (LAION, DFN, SigLIP variants)
+pillow
+sentencepiece
+protobuf
+matplotlib
+pandas
+jupyter
+ipykernel
